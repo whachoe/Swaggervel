@@ -1,5 +1,6 @@
 <?php
 
+use Illuminate\Support\Facades\Route;
 use Swagger\Swagger;
 
 Route::any(Config::get('swaggervel.doc-route').'/{page?}', function($page='api-docs.json') {
